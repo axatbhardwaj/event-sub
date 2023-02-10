@@ -122,42 +122,47 @@ const tokenURIABI = [
     type: 'event',
   },
 ];
-let contractAddress='0xc2132D05D31c914a87C6611C10748AEb04B58e8F';
-async function getBlockByBum() {
-    num = await provider.getBlockNumber();
+let contractAddress = '0xc2132D05D31c914a87C6611C10748AEb04B58e8F';
+
+async function getBlockByBum(i) {
+    num = await provider.getBlock(i);
     console.log(num);
     for (var i = num; i >= 0; i--) {
         var block = await provider.getBlock(i);
-
         console.log(block,i);
     }
 }
-//getBlockByBum();
 
-const contract = new ethers.Contract(contractAddress, tokenURIABI, provider);
-
-const filter = contract.filters.Transfer();
-
-async function check(walletAddress,blockNo) {
-    try {
-      querty = await contract.queryFilter(filter, blockNo ,blockNo);
-      // console.log(typeof (querty));
-      console.log(querty.length);
-      for (var q = 0; q < querty.length; q++) {
-        if (querty[q].args.from == walletAddress) {
-          console.log(querty[q].args.from);
-          console.log("EVENT iteration number :-------->", q);
-        }
-        console.log(JSON.stringify(querty, null, 4));
-        //console.log(querty);
-      }
-    }catch(err){console.log(err)}
-  }
-  
-  async function checker(xxx) {
-  var latest = await provider.getBlockNumber();
-    for (var i = xxx; i < latest ;i++)
-    await check("0xc590175E458b83680867AFD273527Ff58f74c02b",i);
+async function nnnn() {
+  for (let i = 38120511; i < 39120511;i++)
+ await getBlockByBum(i);
 }
 
-checker(16000000);
+nnnn();
+// const contract = new ethers.Contract(contractAddress, tokenURIABI, provider);
+
+// const filter = contract.filters.Transfer();
+
+// async function check(walletAddress,blockNo) {
+//     try {
+//       querty = await contract.queryFilter(filter, blockNo ,blockNo);
+//       // console.log(typeof (querty));
+//       console.log(querty.length);
+//       for (var q = 0; q < querty.length; q++) {
+//        // if (querty[q].args.from == walletAddress) {
+//          // console.log(querty[q].args.from);
+//           console.log("EVENT iteration number :-------->", q);
+//        // }
+//         console.log(JSON.stringify(querty, null, 4));
+//         //console.log(querty);
+//       }
+//     }catch(err){console.log(err)}
+//   }
+  
+//   async function checker(xxx) {
+//   var latest = await provider.getBlockNumber();
+//     for (var i = xxx; i < latest ;i++)
+//     await check("0xc590175E458b83680867AFD273527Ff58f74c02b",i);
+// }
+
+// checker(16000000);

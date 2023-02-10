@@ -1,0 +1,61 @@
+
+
+-----------    getting block no . 1000000
+-----------    Traversing transaction for block no 1000000
+-----------    Block no  1000000  Have  2  Transactions 
+-----------    getting txn rect for Txn no 0
+-----------    Txn :  0  has  1  logs 
+
+[
+  '0xe1fffcc4923d04b559f4d29a8bfc6cda04eb5b0d3c460751c2402c5c5cc9109c'
+]
+-----------    getting txn rect for Txn no 1
+-----------    Txn :  1  has  0  logs 
+
+
+
+-----------    getting block no . 1000001
+-----------    Traversing transaction for block no 1000001
+-----------    Block no  1000001  Have  1  Transactions 
+-----------    getting txn rect for Txn no 0
+-----------    Txn :  0  has  0  logs 
+
+
+
+-----------    getting block no . 1000002
+-----------    Traversing transaction for block no 1000002
+-----------    Block no  1000002  Have  3  Transactions 
+-----------    getting txn rect for Txn no 0
+-----------    Txn :  0  has  0  logs 
+
+-----------    getting txn rect for Txn no 1
+-----------    Txn :  1  has  0  logs 
+
+-----------    getting txn rect for Txn no 2
+-----------    Txn :  2  has  0  logs 
+
+
+
+-----------    getting block no . 1000003
+-----------    Traversing transaction for block no 1000003
+-----------    Block no  1000003  Have  1  Transactions 
+-----------    getting txn rect for Txn no 0
+-----------    Txn :  0  has  0  logs 
+
+
+
+-----------    getting block no . 1000004
+-----------    Traversing transaction for block no 1000004
+-----------    Block no  1000004  Have  2  Transactions 
+-----------    getting txn rect for Txn no 0
+-----------    Txn :  0  has  0  logs 
+
+-----------    getting txn rect for Txn no 1
+-----------    Txn :  1  has  0  logs 
+
+
+
+-----------    getting block no . 1000005
+-----------    Traversing transaction for block no 1000005
+-----------    Block no  1000005  Have  1  Transactions 
+-----------    getting txn rect for Txn no 0

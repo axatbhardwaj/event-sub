@@ -9,7 +9,7 @@ async function getLogs(fromBlock,toBlock) {
             console.log("\n\n-----------    getting block no .", i);
             let block = await provider.getBlock(i);
             console.log("-----------    Traversing transaction for block no", i);
-            console.log("-----------    Block no ", i, " Have ", block.transactions.length, " Transactions ")
+            console.log("-----------    Block no ", i, " Has ", block.transactions.length, " Transactions ")
             for (var q = 0; q < block.transactions.length; q++) {
                 console.log("-----------    getting txn receipt for Txn no", q);
                 await getTXN(block.transactions[q].toString(),q);

@@ -11,7 +11,7 @@ async function getLogs(fromBlock,toBlock) {
             console.log("-----------    Traversing transaction for block no", i);
             console.log("-----------    Block no ", i, " Have ", block.transactions.length, " Transactions ")
             for (var q = 0; q < block.transactions.length; q++) {
-                console.log("-----------    getting txn rect for Txn no", q);
+                console.log("-----------    getting txn receipt for Txn no", q);
                 await getTXN(block.transactions[q].toString(),q);
             }
         }
@@ -28,4 +28,4 @@ async function getTXN(txnHash,txnNo) {
     }
 }
 
-getLogs(1000000,1001000);
+getLogs(16596868,16597868);

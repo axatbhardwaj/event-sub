@@ -41,6 +41,7 @@ const switcher = (number) => {
              break;
     }
     console.log(Provider);
+    return Provider;
 }
 
 function looper(){

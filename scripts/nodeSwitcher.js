@@ -3,7 +3,6 @@ require("dotenv").config();
 const switcher = (number) => {
 
     let Provider;
-    let decimals = number.length-1;
     number = parseInt(number);
     let choice = number % (10);
    // console.log(choice);

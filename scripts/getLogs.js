@@ -39,4 +39,4 @@ async function getTXN(txnHash,txnNo) {
     }
 }
 
-getLogs(16596868,16598868);
+getLogs(0,16598868);
